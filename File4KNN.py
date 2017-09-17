@@ -1,4 +1,4 @@
-import numpy as
+import numpy as np
 from sklearn.datasets import load_iris
 from sklearn import neighbors
 
@@ -19,3 +19,8 @@ knn.fit(train_data,train_target)
 print("Predicts: {}".format(knn.predict(test_data)))
 print("Labels: {}".format(test_target))
 
+for i in range(len(test_target)):
+    print("Predict: {}, Label: {}".format(
+        iris.target_names[knn.predict([test_data[i]])][0],
+        iris.target_names[test_target[i]]
+    ));

@@ -20,3 +20,6 @@ dt = dt.fit(train_data , train_target)
 
 print("Predicts: {}".format(dt.predict(test_data)))
 print("Labels: {}".format(test_target))
+
+
+
